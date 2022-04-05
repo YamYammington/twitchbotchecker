@@ -5,6 +5,5 @@ A bot for Twitch built in python that checks for bot accounts in the viewer list
 Currently supported commands:
 
   !help
-  
   !check
   
