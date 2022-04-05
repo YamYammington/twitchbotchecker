@@ -83,6 +83,9 @@ class TwitchBot:
                     self.chat(self.s, f'Hi {user}! I am BotChecker. For more information, go to https://github.com/YamYammington/twitchbotchecker')
                     return
                 elif action == 'start_banning':
+                    if user not in self.get_viewers()[1]:
+                        self.chat(self.s, "Sorry, you need to be a moderator to use this command!")
+                        return
                     print(f"{user} issued command: CHECK")
                     self.chat(self.s, "Beginning search...")
                     self.check_for_bots()
