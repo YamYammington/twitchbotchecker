@@ -33,7 +33,6 @@ class TwitchBot:
         self.token = token
         self.username = username
         self.channel = channel
-        self.last_message = 0
         self.socket_conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     def start(self):
