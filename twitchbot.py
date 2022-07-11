@@ -133,7 +133,6 @@ class TwitchBot:
             else:
                 self.chat(f"Finished checking, found {bot_count} bots.")
 
-
 def get_bot_accounts():
     bot_list = []
     r = requests.get("https://api.twitchinsights.net/v1/bots/all")
